@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Removia</h1>
+    </header>
+
+    <div class="container">
+        <div class="image-sections">
+            <div class="upload-section" id="uploadSection">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <div class="upload-placeholder">
+                     <p>Select an image</p>
+                </div>
+            </div>
+            
+            <div class="preview-container">
+                <div class="preview-box placeholder" id="resultPreview">
+          <p>Processed image</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="color-palette" id="colorPalette">
+                <!-- Color options will be added here -->
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn btn-custom" id="customBgBtn">Custom
+                </button>
+                <button class="btn btn-download" id="downloadBtn" disabled>Download
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification">Processing complete!</div>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Processing image...</p>
+    </div>
+    
+    <footer>
+        &copy; <span id="year">2025</span>Removia by Pallavi Thakur. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
